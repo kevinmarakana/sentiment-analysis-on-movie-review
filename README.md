@@ -1,13 +1,20 @@
 # 🤖 Sentiment Analysis Web App — IMDB Movie Reviews
-
+<br>
 **Develop by : Kevin Marakana**
+<br>
+<br>
+---
+<br>
 <br>
 **Dataset** : https://drive.google.com/drive/folders/1_B5cgYB7J6W5KDQeYgLEWIeWbAdglFhc?usp=sharing
 <br>
+<br>
 This project is an AI-powered Sentiment Analysis web application built using machine learning techniques on the IMDB movie reviews dataset. Users can input any movie review and receive real-time predictions (Positive or Negative) with high accuracy.
-
+<br>
+<br>
 ![image1](https://github.com/user-attachments/assets/aaa05ce7-9c6b-4de9-b340-44fbac2ea3da)
-
+<br>
+<br>
 ---
 
 ## 📌 Project Overview
