@@ -1,6 +1,6 @@
 # 🤖 Sentiment Analysis Web App — IMDB Movie Reviews
 <br>
-**Develop by : Kevin Marakana**
+<b>Develop by : Kevin Marakana</b>
 <br>
 <br>
 ---
