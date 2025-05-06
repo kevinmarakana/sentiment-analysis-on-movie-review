@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Sentiment Analyzer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    .typing-text {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 2s steps(30, end) forwards;
+      border-right: 2px solid #4ade80;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen text-white flex items-center justify-center p-6">
+
+  <div class="w-full max-w-3xl bg-gray-900 p-10 rounded-2xl shadow-2xl">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-green-400 mb-2">
+        <span class="typing-text block">🤖 AI-Powered Sentiment Analysis</span>
+      </h1>
+      <p class="text-gray-300">Instantly detect movie review sentiment using Machine Learning.</p>
+    </div>
+
+    <form action="/predict" method="post" class="space-y-6">
+      <label for="review" class="block text-sm font-semibold text-gray-300">Enter your movie review:</label>
+      <textarea name="review" required placeholder="Type your review here..." 
+        class="w-full p-4 rounded-xl bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-green-400 min-h-[150px]"></textarea>
+
+      <button type="submit" 
+        class="w-full py-3 px-6 bg-green-500 hover:bg-green-600 transition duration-200 text-white font-semibold rounded-xl text-lg">
+        Analyze Sentiment 💡
+      </button>
+    </form>
+
+    {% if prediction %}
+    <div class="mt-8 text-center">
+      <h2 class="text-xl text-white font-semibold">🔍 Prediction Result:</h2>
+      <p class="mt-2 text-2xl font-bold text-green-400">{{ prediction }}</p>
+      {% if review %}
+      <div class="mt-4 text-gray-400 text-sm">
+        <strong>Input:</strong> "{{ review }}"
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+    <div class="mt-10 text-center text-sm text-gray-500">
+        Develop by : Kevin Marakana
+      </div>
+    <div class="mt-10 text-center text-sm text-gray-500">
+      Built with 🧠 scikit-learn, spaCy & Flask
+    </div>
+  </div>
+
+</body>
+</html>
