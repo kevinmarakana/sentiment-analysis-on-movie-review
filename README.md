@@ -12,7 +12,10 @@
 This project is an AI-powered Sentiment Analysis web application built using machine learning techniques on the IMDB movie reviews dataset. Users can input any movie review and receive real-time predictions (Positive or Negative) with high accuracy.
 <br>
 <br>
-![image1](https://github.com/user-attachments/assets/aaa05ce7-9c6b-4de9-b340-44fbac2ea3da)
+
+![image1](https://github.com/user-attachments/assets/96bc89f0-ca73-4e72-bfe8-ae6bd0f20d26)
+
+
 <br>
 <br>
 ---
